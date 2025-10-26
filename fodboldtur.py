@@ -35,6 +35,8 @@ def udskriv_status():
         else:
             print(f"{navn}: Har betalt {total} kroner. Mangler {mangler} kroner")
 
+        mangler_liste.append((navn, mangler))
+
     mangler_liste.sort(key = lambda x: x[1], reverse = True)
 
     print("Top 3")
